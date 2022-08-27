@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4rem 1rem 2rem 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+/* first landing page */
+
+.mobile-banner {
+    max-width: 269px;
+}
+
+.landing-banner {
+    display: none;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+.main-button {
+    background: #62A1EB;
+    border-radius: 8px;
+    width: 22.375rem;
+    height: 3.75rem;
+    border: none;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background: #317AD0;
+}
+
+.main-button:focus {
+    background: #1A5DAB;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-banner {
+        max-width: 269px;
+        display: none;
+    }
+    .landing-banner {
+        display: block;
+        max-width: 780px;
+        width: 100%;
+    }
+}
