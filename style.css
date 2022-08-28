@@ -259,3 +259,35 @@ form button a {
 .main-container-2 .logo-div>img {
     margin-left: calc(50% - 85px/2 - 0.5px);
 }
+
+
+/* teams and positions options */
+
+.teams-select>.team-options,
+.positions-select>.position-options {
+    position: absolute;
+    width: 740px;
+    height: 205px;
+    left: 213px;
+    top: 266px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+.teams-select.active .team-options,
+.positions-select.active .position-options {
+    display: block;
+}
+
+.teams-select.active .team-options>div,
+.positions-select.active .position-options>div {
+    height: 41px;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
