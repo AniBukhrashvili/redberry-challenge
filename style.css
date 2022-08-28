@@ -13,12 +13,18 @@ body {
     padding: 4rem 1rem 2rem 1rem;
     justify-content: space-between;
     gap: 1rem;
+    overflow: hidden;
+    background-color: #F6F6F6;
+}
+
+a {
+    text-decoration: none;
 }
 
 
 /* first landing page */
 
-.mobile-banner {
+.main-container .mobile-banner {
     max-width: 269px;
 }
 
@@ -71,4 +77,179 @@ body {
         max-width: 780px;
         width: 100%;
     }
+}
+
+.button-container a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* employees information page */
+
+.main-container-2>button {
+    background-color: #D9D9D9;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    top: 53px;
+    left: 70px;
+    cursor: pointer;
+}
+
+.top-nav {
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.top-nav>h1 {
+    font-style: normal;
+    color: #232323;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.42px;
+}
+
+.top-nav>h1 hr {
+    border: 1px solid #000000;
+    width: 185px;
+    margin: 10px auto;
+    left: 690px;
+    top: 130px;
+    text-align: center;
+}
+
+.form-div {
+    width: 1166px;
+    height: 800px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 18px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.form-div form {
+    max-width: 924px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    height: 1024px;
+}
+
+form .fields-flex {
+    width: 80%;
+    display: flex;
+    margin: 25px auto;
+    margin-bottom: 0px;
+}
+
+form .fields-flex>.input-fields {
+    width: 50%;
+}
+
+form .fields-flex>.input-fields:nth-child(1) {
+    margin-right: 50px;
+}
+
+form .input-fields {
+    width: 80%;
+    margin: 20px auto;
+}
+
+form .input-fields>input {
+    padding: 15px 12px;
+    border: 1px solid #8AC0E2;
+    border-radius: 8px;
+    outline: none;
+    margin: 10px auto;
+    width: 100%;
+    height: 60px;
+}
+
+form .input-fields>label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+form .input-fields>p {
+    color: #2E2E2E;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+form input {
+    border: none;
+    width: 90%;
+    height: 21px;
+    margin-top: 6px;
+    left: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    background-color: transparent;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form div[class*='select'] {
+    padding: 15px 12px;
+    border-radius: 8px;
+    outline: none;
+    margin: 18px auto;
+    background-color: #EBEBEB;
+    width: 80%;
+    height: 60px;
+    appearance: none;
+    border: none;
+}
+
+form button {
+    padding: 18px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #62A1EB;
+    width: 176px;
+    height: 60px;
+    gap: 20px;
+    margin-top: 25px;
+    margin-left: 660px;
+    cursor: pointer;
+}
+
+.form-div button:hover {
+    background-color: #317AD0;
+}
+
+.form-div button:focus {
+    background: #1A5DAB;
+}
+
+form button a {
+    color: white;
+    font-size: 18px;
+    width: 85px;
+    height: 24px;
+}
+
+.main-container-2 .logo-div {
+    max-width: 1226px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+}
+
+.main-container-2 .logo-div>img {
+    margin-left: calc(50% - 85px/2 - 0.5px);
 }
