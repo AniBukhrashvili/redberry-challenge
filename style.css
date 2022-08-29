@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
     gap: 1rem;
     background-color: #F6F6F6;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 a {
@@ -298,7 +298,6 @@ form button a {
 
 form .photo-div {
     width: 80%;
-    height: 423px;
     border: 2px dashed #4386A9;
     border-radius: 18px;
     padding: 20px;
@@ -343,4 +342,140 @@ form .photo-div img {
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+
+/*  */
+
+form .input-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+form .input-box .input-wrapper {
+    width: 100%;
+    margin: 15px;
+}
+
+form .input-box .input-wrapper>input {
+    padding: 15px 12px;
+    border: 1px solid #8AC0E2;
+    border-radius: 8px;
+    outline: none;
+    margin: 10px auto;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+form .input-box .input-wrapper>label {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+form .input-box .input-wrapper>p {
+    color: #2E2E2E;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+form .input-box .laptop-brand-dropdown,
+form .input-box .cpu-dropdown {
+    width: 100%;
+    position: relative;
+    margin-top: 42px;
+}
+
+form .input-box .laptop-brand-dropdown>input,
+form .input-box .cpu-dropdown>input {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    padding: 18px 12px;
+    background-color: #EBEBEB;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form .input-box .radio>h1,
+form .input-box .laptop-radio>h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+form .input-box .radio>label,
+form .input-box .laptop-radio>label {
+    font-weight: 400;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+form .input-box .radio>label>div,
+form .input-box .laptop-radio>label>div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #8AC0E2;
+    margin-top: 20px;
+}
+
+form .input-box .radio>label>input,
+form .input-box .laptop-radio>label>input {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #8AC0E2;
+    transition: 0.2s all linear;
+    margin-right: 15px;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+}
+
+form .input-box .radio>label>input:checked,
+form .input-box .laptop-radio>label>input:checked {
+    border: 5px solid #4D9AC3;
+}
+
+form .button-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form .button-div span {
+    display: inline-block;
+    margin-top: 45px;
+    margin-left: 15px;
+    width: 45px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+    color: #62A1EB;
+    cursor: pointer;
+}
+
+form .button-div .save-btn {
+    width: 219px;
+    height: 60px;
+    background: #62A1EB;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+form .button-div .save-btn:hover {
+    background-color: #317AD0;
 }
