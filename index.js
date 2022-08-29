@@ -1,8 +1,16 @@
 const laptopInfo = document.querySelector('#laptop-info');
+const employeeInfo = document.querySelector('#employee-info');
+
+employeeInfo.onclick = function() {
+    location.href = '../pages/employee.html'
+}
 
 laptopInfo.onclick = function() {
     location.href = '../pages/laptops.html'
 }
+
+
+// fetch teams&positions API
 
 const selectTeam = document.querySelector('.team-options');
 const selectPosition = document.querySelector('.position-options');

@@ -28,45 +28,45 @@
 
         <section class="info">
             <div class="form-div">
-                <form action="">
+                <form action="" id="form">
                     <div class="fields-flex">
                         <div class="input-fields">
-                            <label for="name">სახელი</label> <br>
-                            <input type="text" name="fname" id="name" placeholder="გრიშა">
-                            <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+                            <label id="label" for="firstname">სახელი</label> <br>
+                            <input type="text" name="fname" id="firstname" placeholder="გრიშა">
+                            <p id="error-msg">მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
                         </div>
                         <div class="input-fields">
-                            <label for="surname">გვარი</label> <br>
+                            <label id="label" for="surname">გვარი</label> <br>
                             <input type="text" name="lname" id="surname" placeholder="ბაგრატიონი">
-                            <p>მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
+                            <p id="error-msg">მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
                         </div>
                     </div>
 
                     <div class="teams-select">
                         <img src="../assets/dropdown.svg" alt="" style="float:right; margin-top: 12px;">
-                        <input class="team-text" type="text" placeholder="თიმი" name="team">
+                        <input class="team-text" id="team" type="text" placeholder="თიმი" name="team">
                         <div class="team-options"></div>
                     </div>
 
                     <div class="positions-select">
                         <img src="../assets/dropdown.svg" alt="" style="float:right; margin-top: 12px;">
-                        <input class="position-text" type="text" placeholder="პოზიცია" name="position">
+                        <input class="position-text" id="position" type="text" placeholder="პოზიცია" name="position">
                         <div class="position-options"></div>
                     </div>
 
                     <div class="input-fields">
-                        <label for="email">მეილი</label> <br>
+                        <label id="label" for="email">მეილი</label> <br>
                         <input type="text" name="email" id="email" placeholder="grisha666@redberry.ge">
-                        <p>უნდა მთავრდებოდეს @redberry.ge-ით</p>
+                        <p id="error-msg">უნდა მთავრდებოდეს @redberry.ge-ით</p>
                     </div>
 
                     <div class="input-fields">
-                        <label>ტელეფონის ნომერი</label> <br>
-                        <input name="telephone" id="telephone" placeholder="+995 598 00 07 01">
-                        <p>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>
+                        <label id="label"> ტელეფონის ნომერი</label> <br>
+                        <input name="telephone" id="phone" placeholder="+995 598 00 07 01">
+                        <p id="error-msg">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>
                     </div>
 
-                    <button><a href="#">შემდეგი</a></button>
+                    <button type="submit" id="next-button"><a href="#">შემდეგი</a></button>
 
                 </form>
             </div>
