@@ -337,3 +337,10 @@ form .photo-content button {
     font-weight: 500;
     line-height: 24.42px;
 }
+
+form .photo-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}

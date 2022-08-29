@@ -73,3 +73,27 @@ teamsSelect.onclick = () => {
 positionsSelect.onclick = () => {
     positionsSelect.classList.toggle('active');
 }
+
+
+
+
+// upload laptop image 
+
+const defaultBtn = document.querySelector('#default-btn');
+const customBtn = document.querySelector('#custom-btn');
+
+function defaultBtnActive() {
+    defaultBtn.click();
+}
+defaultBtn.addEventListener("change", function() {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function() {
+            const result = reader.result;
+            let imageTag = `<img src="${result}" alt="">`
+            dropArea.innerHTML = imageTag;
+        }
+        reader.readAsDataURL(file);
+    }
+})
