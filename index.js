@@ -79,21 +79,98 @@ positionsSelect.onclick = () => {
 
 // upload laptop image 
 
-const defaultBtn = document.querySelector('#default-btn');
-const customBtn = document.querySelector('#custom-btn');
+// const defaultBtn = document.querySelector('#default-btn');
+// const customBtn = document.querySelector('#custom-btn');
 
-function defaultBtnActive() {
-    defaultBtn.click();
-}
-defaultBtn.addEventListener("change", function() {
-    const file = this.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function() {
-            const result = reader.result;
-            let imageTag = `<img src="${result}" alt="">`
-            dropArea.innerHTML = imageTag;
-        }
-        reader.readAsDataURL(file);
+// function defaultBtnActive() {
+//     defaultBtn.click();
+// }
+// defaultBtn.addEventListener("change", function() {
+//     const file = this.files[0];
+//     if (file) {
+//         const reader = new FileReader();
+//         reader.onload = function() {
+//             const result = reader.result;
+//             let imageTag = `<img src="${result}" alt="">`
+//             dropArea.innerHTML = imageTag;
+//         }
+//         reader.readAsDataURL(file);
+//     }
+// })
+
+
+// employees info validation
+
+const firstName = document.getElementById('firstname');
+const lastName = document.getElementById('surname');
+const team = document.getElementById('team');
+const position = document.getElementById('position');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+const geo = /^[ა-ჰ]+$/;
+
+// const btn = document.getElementById('#next-button');
+
+// btn.addEventListener("submit", event => {
+//     event.preventDefault();
+//     checkValidation();
+// })
+
+
+const checkValidation = () => {
+    const firstNameValue = firstName.value.trim();
+    const lastNameValue = lastName.value.trim();
+    const teamValue = team.value;
+    const positionValue = position.value;
+    const emailValue = email.value.trim();
+    const phoneValue = phone.value.trim();
+
+    if (firstNameValue.length < 2) {
+        errorFunc();
+    } else if (!geo.test(firstNameValue)) {
+        errorFunc();
+    } else {
+        console.log('ეგარი');
     }
-})
+
+    if (lastNameValue.length < 9) {
+        errorFunc();
+    } else if (!geo.test(lastNameValue)) {
+        errorFunc();
+    } else {
+        console.log('ეგარი');
+    }
+
+    if (teamValue === '') {
+        document.getElementById('#team').style.borderColor = '#E52F2F';
+    } else {
+        console.log('ეგარი');
+    }
+
+    if (positionValue === '') {
+        document.getElementById('#position').style.borderColor = '#E52F2F';
+    } else {
+        console.log('ეგარი');
+    }
+
+    if (!emailValue.endsWith("@redberry.ge")) {
+        errorFunc();
+    } else {
+        console.log('ეგარი');
+    }
+
+    if (phoneValue.startsWith('+995')) {
+        errorFunc();
+    } else if (phoneValue.length != 13) {
+        errorFunc();
+    } else {
+        console.log('ეგარი');
+    }
+
+}
+
+const errorFunc = () => {
+    document.getElementById('.label').style.color = '#E52F2F';
+    document.querySelector('input').style.color = '#E52F2F';
+    document.getElementById('.error-msg').style.color = '#E52F2F';
+}

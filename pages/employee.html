@@ -12,7 +12,7 @@
 
 <body>
     <div class="main-container-2">
-        <button><a href="../pages/index.html"><img src="../assets/arrow.svg"></a></button>
+        <button><a href="../pages/index.html"><img src="../assets/arrow.svg" class="arrow-img"></a></button>
         <div class="top-nav">
             <h1 id="employee-info">
                 თანამშრომლის ინფო
@@ -28,41 +28,41 @@
 
         <section class="info">
             <div class="form-div">
-                <form action="" id="form">
+                <form action="" id="form" onsubmit="return checkValidation()">
                     <div class="fields-flex">
                         <div class="input-fields">
                             <label id="label" for="firstname">სახელი</label> <br>
-                            <input type="text" name="fname" id="firstname" placeholder="გრიშა">
+                            <input type="text" id="firstname" placeholder="გრიშა">
                             <p id="error-msg">მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
                         </div>
                         <div class="input-fields">
                             <label id="label" for="surname">გვარი</label> <br>
-                            <input type="text" name="lname" id="surname" placeholder="ბაგრატიონი">
+                            <input type="text" id="surname" placeholder="ბაგრატიონი">
                             <p id="error-msg">მინიმუმ 2 სიმბოლო, ქართული ასოები</p>
                         </div>
                     </div>
 
                     <div class="teams-select">
                         <img src="../assets/dropdown.svg" alt="" style="float:right; margin-top: 12px;">
-                        <input class="team-text" id="team" type="text" placeholder="თიმი" name="team">
+                        <input class="team-text" id="team" type="text" placeholder="თიმი">
                         <div class="team-options"></div>
                     </div>
 
                     <div class="positions-select">
                         <img src="../assets/dropdown.svg" alt="" style="float:right; margin-top: 12px;">
-                        <input class="position-text" id="position" type="text" placeholder="პოზიცია" name="position">
+                        <input class="position-text" id="position" type="text" placeholder="პოზიცია">
                         <div class="position-options"></div>
                     </div>
 
                     <div class="input-fields">
                         <label id="label" for="email">მეილი</label> <br>
-                        <input type="text" name="email" id="email" placeholder="grisha666@redberry.ge">
+                        <input type="text" id="email" placeholder="grisha666@redberry.ge">
                         <p id="error-msg">უნდა მთავრდებოდეს @redberry.ge-ით</p>
                     </div>
 
                     <div class="input-fields">
                         <label id="label"> ტელეფონის ნომერი</label> <br>
-                        <input name="telephone" id="phone" placeholder="+995 598 00 07 01">
+                        <input id="phone" placeholder="+995 598 00 07 01">
                         <p id="error-msg">უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>
                     </div>
 
