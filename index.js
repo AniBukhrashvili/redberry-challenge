@@ -1,3 +1,12 @@
+const firstName = document.getElementById('firstname');
+const lastName = document.getElementById('surname');
+const team = document.getElementById('team');
+const position = document.getElementById('position');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+const btn = document.getElementById('next-btn');
+const geo = /^[ა-ჰ]+$/;
+
 const laptopInfo = document.querySelector('#laptop-info');
 const employeeInfo = document.querySelector('#employee-info');
 
@@ -33,21 +42,17 @@ fetch('https://pcfy.redberryinternship.ge/api/teams').then(res => {
     console.log(err);
 })
 
-console.log(teamArr);
-
 function showText(value) {
     document.querySelector('.team-text').value = value;
     document.querySelector('.position-text').value = '';
 
     teamArr.forEach(item => {
         if (item.name === value) {
-            console.log(item.name);
             fetch('https://pcfy.redberryinternship.ge/api/positions').then(res => {
                 return res.json();
             }).then(data => {
                 let result = '';
                 const filterArray = data.data.filter(position => position.team_id === item.id);
-                console.log(filterArray);
                 filterArray.forEach(position => {
                     result += `<div onclick="showPositions('${position.name}')">${position.name}</div>`;
                 })
@@ -101,20 +106,10 @@ positionsSelect.onclick = () => {
 
 // employees info validation
 
-const firstName = document.getElementById('firstname');
-const lastName = document.getElementById('surname');
-const team = document.getElementById('team');
-const position = document.getElementById('position');
-const email = document.getElementById('email');
-const phone = document.getElementById('phone');
-const geo = /^[ა-ჰ]+$/;
-
-// const btn = document.getElementById('#next-button');
-
-// btn.addEventListener("submit", event => {
-//     event.preventDefault();
-//     checkValidation();
-// })
+btn.addEventListener("submit", event => {
+    event.preventDefault();
+    checkValidation();
+})
 
 
 const checkValidation = () => {

@@ -537,6 +537,14 @@ main .buttons .list-button {
     margin-top: 60px;
 }
 
+main .buttons .list-button:hover {
+    background: #317AD0;
+}
+
+main .buttons .list-button:focus {
+    background: #1A5DAB;
+}
+
 main .buttons .main-button {
     font-weight: 500;
     font-size: 20px;
