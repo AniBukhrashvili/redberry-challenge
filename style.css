@@ -23,6 +23,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 
@@ -554,4 +555,21 @@ main .buttons .main-button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+
+/* errors */
+
+.input-fields.error label,
+.input-fields.error p {
+    color: #E52F2F;
+}
+
+.input-fields.error input {
+    border-color: #E52F2F;
+}
+
+.teams-select.error input,
+.positions-select.error input {
+    border-color: #E52F2F;
 }
