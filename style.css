@@ -561,16 +561,21 @@ main .buttons .main-button {
 /* errors */
 
 .input-fields.error label,
-.input-fields.error p {
+.input-fields.error p,
+.input-wrapper.error label,
+.input-wrapper.error p {
     color: #E52F2F;
 }
 
-.input-fields.error input {
+.input-fields.error input,
+.input-wrapper.error input {
     border-color: #E52F2F;
 }
 
 .teams-select.error input,
-.positions-select.error input {
+.positions-select.error input,
+.laptop-brand-dropdown input,
+.cpu-dropdown input {
     border-color: #E52F2F;
 }
 
