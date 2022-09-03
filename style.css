@@ -573,3 +573,39 @@ main .buttons .main-button {
 .positions-select.error input {
     border-color: #E52F2F;
 }
+
+
+/* brands&cpus api */
+
+.laptop-brand-dropdown>.brand-options,
+.cpu-dropdown>.cpu-options {
+    position: absolute;
+    width: 100%;
+    height: 255px;
+    left: 15px;
+    top: 70px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+.cpu-dropdown>.cpu-options {
+    height: 415px;
+}
+
+.laptop-brand-dropdown.active .brand-options,
+.cpu-dropdown.active .cpu-options {
+    display: block;
+}
+
+.laptop-brand-dropdown.active .brand-options>div,
+.cpu-dropdown.active .cpu-options>div {
+    height: 41px;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
