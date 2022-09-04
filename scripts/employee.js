@@ -67,6 +67,28 @@ positionsSelect.onclick = () => {
     positionsSelect.classList.toggle('active');
 }
 
+// image upload
+
+const defaultBtn = document.querySelector('#default-btn');
+const customBtn = document.querySelector('#custom-btn');
+const photoDiv = document.querySelector('.photo-div');
+
+function defaultBtnActive() {
+    defaultBtn.click();
+}
+
+defaultBtn.addEventListener('change', function() {
+    const file = this.file[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function() {
+            const res = reader.result;
+            let imageTag = `<img src="${res}" alt = ""`;
+            photoDiv.innerHTML = imageTag;
+        }
+        reader.readAsDataURL(file);
+    }
+})
 
 // first form validation
 

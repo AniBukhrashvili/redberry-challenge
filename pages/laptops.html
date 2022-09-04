@@ -36,39 +36,39 @@
                     <div class="photo-div">
                         <div class="photo-content">
                             <h1>ჩააგდე ან ატვირთე ლეპტოპის ფოტო</h1>
-                            <input type="file" id="default-btn" hidden>
+                            <input type="file" id="default-btn" onclick="defaultBtnActive()" hidden>
                             <button id="custom-btn">ატვირთე</button>
                         </div>
                     </div>
 
-                    <div class="input-box">
-                        <div class="input-wrapper">
+                    <div class="input-box ">
+                        <div class="input-wrapper ">
                             <label id="laptop-name-label ">ლეპტოპის სახელი</label> <br>
-                            <input type="text " name="laptop-name " id="laptop-name" placeholder="HP ">
+                            <input type="text " name="laptop-name " id="laptop-name " placeholder="HP ">
                             <p class="error-msg ">ლათინური ასოები, ციფრები, !@#$%^&*()_+= </p>
                         </div>
-                        <div class="laptop-brand-dropdown">
-                            <input type="text " class="textBox " id="laptop-brand" placeholder="ლეპტოპის ბრენდი " name="laptop-brand ">
+                        <div class="laptop-brand-dropdown ">
+                            <input type="text " class="textBox " id="laptop-brand " placeholder="ლეპტოპის ბრენდი " name="laptop-brand ">
                             <div class="brand-options "></div>
                         </div>
                     </div>
 
-                    <hr style="color: #c7c7c7; margin-bottom: 25px;">
+                    <hr style="color: #c7c7c7; margin-bottom: 25px; ">
 
                     <div class="input-box ">
-                        <div class="cpu-dropdown" style="margin-right: 25px; ">
-                            <input type="text " class="textBox " id="cpu" placeholder="CPU " name="cpu ">
+                        <div class="cpu-dropdown " style="margin-right: 25px; ">
+                            <input type="text " class="textBox " id="cpu " placeholder="CPU " name="cpu ">
                             <p class="error-msg "></p>
                             <div class="cpu-options "></div>
                         </div>
                         <div class="input-wrapper ">
                             <label id="cpu-cores-label ">CPU-ს ბირთვი</label> <br>
-                            <input name="cores " id="cpu-cores" placeholder="14">
+                            <input name="cores " id="cpu-cores " placeholder="14 ">
                             <p class="error-msg ">მხოლოდ ციფრები</p>
                         </div>
                         <div class="input-wrapper ">
                             <label id="cpu-threads-label ">CPU-ს ნაკადი</label> <br>
-                            <input name="cpu-threads " id="cpu-threads" placeholder="365 ">
+                            <input name="cpu-threads " id="cpu-threads " placeholder="365 ">
                             <p class="error-msg ">მხოლოდ ციფრები</p>
                         </div>
                     </div>
@@ -76,58 +76,58 @@
                     <div class="input-box ">
                         <div class="input-wrapper ">
                             <label id="ram-label ">ლეპტოპის RAM (GB)</label> <br>
-                            <input name="ram " id="ram" placeholder="16 ">
+                            <input name="ram " id="ram " placeholder="16 ">
                             <p class="error-message ">მხოლოდ ციფრები</p>
                         </div>
 
-                        <div class="input-wrapper radio">
+                        <div class="input-wrapper radio ">
                             <h1>მეხსიერების ტიპი</h1>
-                            <label class="form-control" for="ssd">
-                                <input type="radio" name="radio" id='ssd' />
+                            <label class="form-control " for="ssd ">
+                                <input type="radio " name="radio " id='ssd' />
                                 SSD
                             </label>
 
-                            <label class="form-control" for="hdd">
-                                <input type="radio" name="radio" id="hdd" />
+                            <label class="form-control " for="hdd ">
+                                <input type="radio " name="radio " id="hdd " />
                                 HDD
                             </label>
                         </div>
                     </div>
 
-                    <hr style="color: #c7c7c7; margin-bottom: 25px;">
+                    <hr style="color: #c7c7c7; margin-bottom: 25px; ">
 
                     <div class="input-box ">
                         <div class="input-wrapper ">
                             <label id="date-label ">შეძენის რიცხვი (არჩევითი)</label> <br>
-                            <input name="date " id="date" placeholder="დდ / თთ / წწწწ " onfocus="(this.type='date' ) ">
+                            <input name="date " id="date " placeholder="დდ / თთ / წწწწ " onfocus="(this.type='date' ) ">
                         </div>
                         <div class="input-wrapper ">
                             <label id="price-label ">ლეპტოპის ფასი</label> <br>
-                            <input name="price " id="price" placeholder="0000 ">
+                            <input name="price " id="price " placeholder="0000 ">
                             <p class="error-msg ">მხოლოდ ციფრები</p>
                         </div>
                     </div>
 
-                    <div class="input-box">
-                        <div class="input-wrapper laptop-radio">
+                    <div class="input-box ">
+                        <div class="input-wrapper laptop-radio ">
                             <h1>ლეპტოპის მდგომარეობა</h1>
-                            <label class="form-control">
-                                <input type="radio" name="laptop-radio" id="new"/>
+                            <label class="form-control ">
+                                <input type="radio " name="laptop-radio " id="new "/>
                                 ახალი
                             </label>
-                            <label class="form-control">
-                                <input type="radio" name="laptop-radio" id="secondary"/>
+                            <label class="form-control ">
+                                <input type="radio " name="laptop-radio " id="secondary "/>
                                 მეორადი
                             </label>
                         </div>
                     </div>
 
-                    <div class="button-div">
+                    <div class="button-div ">
                         <div>
-                            <a href="employee.html"><span>უკან</span></a>
+                            <a href="employee.html "><span>უკან</span></a>
                         </div>
                         <div>
-                            <button type="submit" class="save-btn"><a>დამახსოვრება</a></button>
+                            <button type="submit " class="save-btn "><a>დამახსოვრება</a></button>
                         </div>
                     </div>
                 </form>
@@ -141,7 +141,7 @@
 
     </div>
 
-    <script src="../scripts/laptops.js"></script>
+    <script src="../scripts/laptops.js "></script>
 
 </body>
 
